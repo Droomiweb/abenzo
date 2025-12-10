@@ -1,5 +1,6 @@
 'use client';
 
+import ClickRipple from './components/ClickRipple';
 import Navbar from './components/Navbar';
 import Scene from './components/Scene';
 import MouseFollower from './components/MouseFollower';
@@ -17,19 +18,19 @@ export default function Home() {
     {
       title: "PetLink",
       category: "AI Based Pet Matrimony Project",
-      link: "https://petlinkk.vercel.app", // Example: A site that allows embedding
+      link: "https://petlinkk.vercel.app",
       color: "bg-blue-900"
     },
     {
       title: "My Coco",
       category: "3D game",
-      link: "https://mycocopet.vercel.app", // Example
+      link: "https://mycocopet.vercel.app",
       color: "bg-purple-900"
     },
     {
       title: "Food Delivery",
       category: "Cancelled project",
-      link: "https://momos-theta.vercel.app", // Example
+      link: "https://momos-theta.vercel.app",
       color: "bg-emerald-900"
     }
   ];
@@ -79,6 +80,7 @@ export default function Home() {
   return (
     <main className="bg-abenzo-dark min-h-screen text-white selection:bg-[#008278] selection:text-white">
       <MouseFollower />
+      <ClickRipple />
       <Navbar />
 
       {/* --- HERO SECTION --- */}
