@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://abenzo.vercel.app/'; // Change this to your real domain later
+  const baseUrl = 'https://abenzo.vercel.app'; // REMOVED the trailing slash here
 
   return [
     {
@@ -8,8 +8,9 @@ export default function sitemap() {
       changeFrequency: 'monthly',
       priority: 1,
     },
+    // Google technically ignores #anchors, but we can keep them for structure
     {
-      url: `${baseUrl}/#services`,
+      url: `${baseUrl}/#services`, 
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
