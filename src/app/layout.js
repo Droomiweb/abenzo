@@ -15,14 +15,23 @@ export const metadata = {
   },
 
   // 3. Title & Description
-  title: {
-    default: "Abenzo | Digital Experience & Branding Agency",
+ title: {
+    default: "Abenzo | 3D Web Design & Next.js Freelancer in Kerala", // Add location or niche
     template: "%s | Abenzo"
   },
-  description: "Abenzo is a premier freelance digital agency specializing in high-performance Next.js websites, 3D experiences, and strategic branding.",
   
-  // 4. Keywords
-  keywords: ["Web Development", "3D Website", "Freelancer", "Abenzo", "React Developer", "Next.js Agency"],
+  // Update description to include "natural language" keywords
+  description: "Abenzo is a Kerala-based digital agency building immersive 3D websites and high-performance Next.js applications for brands worldwide.",
+
+  // Add more specific long-tail keywords
+  keywords: [
+    "Web Development Kerala", 
+    "3D Website Designer", 
+    "Freelance Next.js Developer India", 
+    "Abenzo", 
+    "Interactive Web Design", 
+    "Three.js Developer"
+  ],
   
   // 5. Open Graph (Social Media Cards)
   openGraph: {
