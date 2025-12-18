@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 import { 
   ArrowRight, Terminal, PenTool, Layout, Mail, ExternalLink,
   ShoppingCart, RefreshCcw, Zap, Search, FileCode, MessageCircle, LifeBuoy,
-  Instagram, Smartphone 
+  Instagram
 } from 'lucide-react';
 
 export default function Home() {
@@ -92,12 +92,17 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
+            {/* OPTIMIZED: Specific Niche Tagline */}
             <h2 className="text-[#008278] font-bold tracking-[0.2em] text-xs uppercase mb-6">
-              Digital Experience Agency
+              Next.js & 3D Digital Experience Agency
             </h2>
+            
+            {/* OPTIMIZED: H1 with Screen-Reader-Only Text for SEO */}
             <h1 className="font-space text-6xl md:text-8xl font-black mb-6 leading-none tracking-tight text-white">
+              <span className="sr-only">Abenzo - 3D Web Development Agency</span>
               Abenzo<span className="text-[#008278]">.</span>
             </h1>
+
             <p className="text-gray-400 text-lg md:text-xl max-w-xl mx-auto mb-10 leading-relaxed">
               We build high-performance websites and digital brands that leave a lasting impact.
             </p>
@@ -112,6 +117,19 @@ export default function Home() {
               </a>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* --- NEW ABOUT/SEO SECTION --- */}
+      {/* This text is crucial for Google to understand what you actually DO */}
+      <section className="py-12 px-6 bg-abenzo-dark relative z-10 border-b border-white/5">
+        <div className="max-w-4xl mx-auto text-center">
+           <p className="text-gray-400 text-lg leading-relaxed">
+             We specialize in converting standard websites into <strong>immersive 3D experiences</strong>. 
+             Using advanced technologies like <strong>React Three Fiber</strong> and <strong>Next.js</strong>, 
+             we help startups and established brands in India and worldwide stand out with 
+             award-winning interactive designs and <strong>high-performance code</strong>.
+           </p>
         </div>
       </section>
 
@@ -175,7 +193,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --- NEW CONTACT SECTION --- */}
+      {/* --- CONTACT SECTION --- */}
       <section id="contact" className="py-32 px-6 bg-abenzo-dark relative z-10 overflow-hidden">
         {/* Glow Effect behind contact */}
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-[#008278] opacity-5 blur-[120px] pointer-events-none" />
